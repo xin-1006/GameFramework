@@ -19,6 +19,7 @@ class Mob(pygame.sprite.Sprite):
         self.image = pygame.image.load(path.join(MOB_PATH, f"{self._image_id}.png"))
         self._x_speed = random.choice([random.randrange(-4, 0), random.randrange(1, 5)])
 
+
     def update(self, *args, **kwargs) -> None:
         self.rect.x += self._x_speed
 
